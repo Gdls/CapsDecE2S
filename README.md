@@ -7,6 +7,7 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 
 #### Code Structure:
 >CapsDecE2S<br>
+├── model.py<br>
 ├── Results<br>
 │   ├── Score.class<br>
 │   ├── Score.java<br>
@@ -28,7 +29,6 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 │   │  ├── senseval2.gold.key.txt<br>
 │   │  ├── senseval3.gold.key.txt<br>
 ├── CapsDecE2S.png<br>
-├── model.py<br>
 └── README.md<br>
 
 * "modeling.py" the main structure of CapsDecE2S, including the backbone class("class Model()") and two functions("\def routing()" and "\def sense Global Local att()").<br> 
