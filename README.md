@@ -3,7 +3,7 @@ The source code for the CapsDecE2S model(coming soon).
 
 #### Description
 This repository includes the source code for the paper "Decomposing Word Embedding with the Capsule Network".
-
+#### CapsDecE2S structure
 ![The structure of CapsDecE2S model.](https://github.com/Gdls/CapsDecE2S/blob/master/CapsDecE2S.png)
 
 #### Requirements
