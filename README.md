@@ -6,10 +6,6 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 #### CapsDecE2S structure
 ![The structure of CapsDecE2S model.](https://github.com/Gdls/CapsDecE2S/blob/master/CapsDecE2S.png)
 
-#### Requirements
-Libraries: ubuntu = 16.04, cuda = 10.2, cudnn = 8, GPU card = NVIDIA Tesla V100 * 1<br>
-Dependencies: python > 3.5, tensorflow > 1.10.0, pdb, numpy, tdqm, codecs<br>
-
 #### Code Structure:
 >CapsDecE2S<br>
 ├── Results<br>
@@ -42,3 +38,7 @@ Dependencies: python > 3.5, tensorflow > 1.10.0, pdb, numpy, tdqm, codecs<br>
 * "results/pred/\*" the predictions on each test set.<br>
 * "results/gold/\*" the gold labels on each test set.<br>
 * "results/java\*" the evaluation script, command "java Scorer [gold-standard] [system-output]"<br>
+
+#### Requirements
+Libraries: ubuntu = 16.04, cuda = 10.2, cudnn = 8, GPU card = NVIDIA Tesla V100 * 1<br>
+Dependencies: python > 3.5, tensorflow > 1.10.0, pdb, numpy, tdqm, codecs<br>
