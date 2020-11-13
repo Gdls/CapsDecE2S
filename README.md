@@ -36,7 +36,7 @@ Dependencies: python > 3.5, tensorflow > 1.10.0, pdb, numpy, tdqm, codecs<br>
 * "modeling.py" the main structure of CapsDecE2S, including the backbone class("class Model()") and two functions("\def routing()" and "\def sense Global Local att()").<br> 
 	* The class "class Model()" is the backbone of the CapsDecE2S model;<br>
 	* The function "\def routing()" is for the embedding decomposing module;<br>
-	* The function "\def sense Global Local att()" is used to calculated the global and local attention.<br>
+	* The function "\def sense Global Local att()" is used to calculate the global and local attention.<br>
 * "results/pred/\*" the predictions on each test set.<br>
 * "results/gold/\*" the gold labels on each test set.<br>
 * "results/java\*" the evaluation script, command "java Scorer [gold-standard] [system-output]"<br>
