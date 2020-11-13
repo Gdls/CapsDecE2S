@@ -4,6 +4,8 @@ The source code for the CapsDecE2S model(coming soon).
 #### Description
 This repository includes the source code for the paper "Decomposing Word Embedding with the Capsule Network".
 
+![](https://github.com/Gdls/CapsDecE2S/blob/master/CapsDecE2S.pdf) 
+
 #### Requirements
 Libraries: ubuntu = 16.04, cuda = 10.2, cudnn = 8, GPU card = NVIDIA Tesla V100 * 1<br>
 Dependencies: python > 3.5, tensorflow > 1.10.0, pdb, numpy, tdqm, codecs<br>
