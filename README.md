@@ -27,6 +27,7 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 │   │  ├── semeval2015.gold.key.txt<br>
 │   │  ├── senseval2.gold.key.txt<br>
 │   │  ├── senseval3.gold.key.txt<br>
+├── CapsDecE2S.png<br>
 ├── model.py<br>
 └── README.md<br>
 
