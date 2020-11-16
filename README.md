@@ -24,10 +24,8 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 │   │  ├── train.tsv<br>
 │   ├── LMMS_SE\*<br>
 │   │  ├── test.tsv<br>
-│   ├── semeval20\*<br>
-│   │  ├── semeval20\*.gold.key.txt<br>
-│   ├── senseval\*<br>
-│   │  ├── senseval\*.gold.key.txt<br>
+│   ├── gold<br>
+│   │  ├── \*.gold.key.txt<br>
 │   ├── lmms<br>
 │   │  ├── lmms1024_emb.npy<br>
 ├── model<br>
