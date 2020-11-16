@@ -28,10 +28,6 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 │   │  ├── \*.gold.key.txt<br>
 │   ├── lmms<br>
 │   │  ├── lmms1024_emb.npy<br>
-├── model<br>
-│   ├── model.ckpt-198143.data-00000-of-00001<br>
-│   ├── model.ckpt-198143.index<br>
-│   ├── model.ckpt-198143.meta<br>
 ├── Results<br>
 │   ├── predict_run0.png<br>
 │   ├── predict_run1.png<br>
