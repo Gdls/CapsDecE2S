@@ -54,8 +54,7 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 
 * python train.py --task_name=WM --do_train=true --data_dir=./data/traindata --vocab_file=./vocab.txt --bert_config_file=./bert_config.json --init_checkpoint=$BERT_BASE_DIR/bert_model.ckpt --max_seq_length=128 --train_batch_size=32 --learning_rate=2e-5 --num_train_epochs=10.0 --output_dir=./output/
 
-#### Prediction
-#example prediction on SE07
+#### Prediction（Example prediction on SE07）
 * python predict.py --task_name=WM --do_predict=true --data_dir=./data/LMMS_SE07 --vocab_file=./vocab.txt --bert_config_file=./bert_config.json --init_checkpoint=./output/model.ckpt-*** --max_seq_length=128 --output_dir=./data/
 
 * python statistical.py SE07 #output file CapsDecE2S_large_lmms_SE07_prediction.txt
