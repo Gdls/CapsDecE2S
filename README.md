@@ -7,27 +7,37 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 
 #### Code Structure:
 >CapsDecE2S<br>
+├── __init__.py<br>
+├── train.py<br>
+├── predict.py<br>
+├── modeling.py<br>
+├── match_utils.py<br>
+├── optimization.py<br>
+├── tokenization.py<br>
 ├── model.py<br>
-├── Results<br>
+├── bert_config.json<br>
+├── vocab.txt<br>
+├── data<br>
 │   ├── Score.class<br>
 │   ├── Score.java<br>
+│   ├── traindata<br>
+│   │  ├── train.tsv<br>
+│   ├── LMMS_SE\*<br>
+│   │  ├── test.tsv<br>
+│   ├── semeval20\*<br>
+│   │  ├── semeval20\*.gold.key.txt<br>
+│   ├── senseval\*<br>
+│   │  ├── senseval\*.gold.key.txt<br>
+│   ├── lmms<br>
+│   │  ├── lmms1024_emb.npy<br>
+├── model<br>
+│   ├── model.ckpt-198143.data-00000-of-00001<br>
+│   ├── model.ckpt-198143.index<br>
+│   ├── model.ckpt-198143.meta<br>
+├── Results<br>
 │   ├── predict_run0.png<br>
 │   ├── predict_run1.png<br>
 │   ├── predict_run2.png<br>
-│   ├── pred<br>
-│   │  ├── CapsDecE2S_large_lmms_run1_all_prediction.txt<br>
-│   │  ├── CapsDecE2S_large_lmms_run1_SE07_prediction.txt<br>
-│   │  ├── CapsDecE2S_large_lmms_run1_SE13_prediction.txt<br>
-│   │  ├── CapsDecE2S_large_lmms_run1_SE15_prediction.txt<br>
-│   │  ├── CapsDecE2S_large_lmms_run1_SE2_prediction.txt<br>
-│   │  ├── CapsDecE2S_large_lmms_run1_SE3_prediction.txt<br>
-│   ├── gold<br>
-│   │  ├── all.gold.key.txt<br>
-│   │  ├── semeval2007.gold.key.txt<br>
-│   │  ├── semeval2013.gold.key.txt<br>
-│   │  ├── semeval2015.gold.key.txt<br>
-│   │  ├── senseval2.gold.key.txt<br>
-│   │  ├── senseval3.gold.key.txt<br>
 ├── CapsDecE2S.png<br>
 └── README.md<br>
 
