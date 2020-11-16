@@ -1,0 +1,1 @@
+label   sentence        gloss   index4sent      index4gloss     lmms_index4sent lmms_index4gloss        word    pos     sense   word    poss    sense   id
