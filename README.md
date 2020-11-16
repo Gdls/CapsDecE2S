@@ -35,13 +35,17 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 ├── CapsDecE2S.png<br>
 └── README.md<br>
 
-* "modeling.py" the main structure of CapsDecE2S, including the backbone class("class Model()") and two functions("\def routing()" and "\def sense Global Local att()").<br> 
-	* The class "class Model()" is the backbone of the CapsDecE2S model;<br>
-	* The function "\def routing()" is for the embedding decomposing module;<br>
-	* The function "\def sense Global Local att()" is used to calculate the global and local attention.<br>
-* "results/pred/\*" the predictions on each test set.<br>
-* "results/gold/\*" the gold labels on each test set.<br>
-* "results/java\*" the evaluation script, command "java Scorer [gold-standard] [system-output]"<br>
+* "train.py" the training file.<br>
+* "predict.py" the prediction file.<br>
+* "modeling.py" the main structure of CapsDecE2S, including the backbone class("class Model()")<br> 
+* "match_utils.py" function file
+* "bert_config.json/vocab.txt" configure file
+* "data/traindata/train.tsv" training data(see title.txt for the format)
+* "data/LMMS_SE\*/test.tsv" test file for SE07,SE13,SE15,SE2,SE3
+* "data/gold/\*.gold.key.txt" gold label file for each test file
+* "data/lmms/lmms1024_emb.npy" lmms embedding file
+* "data/java\*" the evaluation script, command "java Scorer [gold-standard] [system-output]"<br>
+* "results/\*.png" the screenshots of three predictions on each test set.<br>
 
 #### Requirements
 Libraries: ubuntu = 16.04, cuda = 10.2, cudnn = 8, GPU card = NVIDIA Tesla V100 * 1<br>
