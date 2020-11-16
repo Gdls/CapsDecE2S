@@ -20,6 +20,7 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 ├── data<br>
 │   ├── Score.class<br>
 │   ├── Score.java<br>
+│   ├── statistic.py<br>
 │   ├── traindata<br>
 │   │  ├── train.tsv<br>
 │   ├── LMMS_SE\*<br>
@@ -44,8 +45,21 @@ This repository includes the source code for the paper "Decomposing Word Embeddi
 * "data/LMMS_SE\*/test.tsv" test file for SE07,SE13,SE15,SE2,SE3
 * "data/gold/\*.gold.key.txt" gold label file for each test file
 * "data/lmms/lmms1024_emb.npy" lmms embedding file
+* "data/statistic.py" converting the prediciton file into the format of [system-output]
 * "data/java\*" the evaluation script, command "java Scorer [gold-standard] [system-output]"<br>
 * "results/\*.png" the screenshots of three predictions on each test set.<br>
+
+#### Train Model
+* export BERT_BASE_DIR=BERT_large # download the BERT large parameters here
+
+* python train.py --task_name=WM --do_train=true --data_dir=./data/traindata --vocab_file=./vocab.txt --bert_config_file=./bert_config.json --init_checkpoint=$BERT_BASE_DIR/bert_model.ckpt --max_seq_length=128 --train_batch_size=32 --learning_rate=2e-5 --num_train_epochs=10.0 --output_dir=./output/
+
+#### Prediction
+#example prediction on SE07
+* python predict.py --task_name=WM --do_predict=true --data_dir=./data/LMMS_SE07 --vocab_file=./vocab.txt --bert_config_file=./bert_config.json --init_checkpoint=./output/model.ckpt-*** --max_seq_length=128 --output_dir=./data/
+
+* python statistical.py SE07 #output file CapsDecE2S_large_lmms_SE07_prediction.txt
+* java Score gold/semeval2007.gold.key.txt CapsDecE2S_large_lmms_SE07_prediction.txt
 
 #### Requirements
 Libraries: ubuntu = 16.04, cuda = 10.2, cudnn = 8, GPU card = NVIDIA Tesla V100 * 1<br>
